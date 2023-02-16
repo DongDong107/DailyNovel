@@ -1,0 +1,97 @@
+/* html{
+  height: 100%;
+} */
+/* ---------------- 화면 전체적인 틀 */
+body{
+  display: grid;
+  /* width: 100%;
+  min-height: 100%; */
+  width: 100vw;
+  max-width: 100vw;
+  height: 100vh;
+  grid-template-rows: 1fr 5fr 2fr;
+  box-sizing: border-box;
+  margin: 0px;
+}
+
+
+
+/* --------------- 헤더(슬라이더,끄기)  */
+header{
+  display: flex;  
+  justify-content: center;
+  align-items: center;
+}
+
+header > .slider{
+  display: flex;
+  width: 15vw;
+  justify-content: space-between;
+}
+
+header>.slider>div{
+  width: 7px;
+  height: 7px;
+  background-color: #CECECE;
+  border-radius: 50%;  
+}
+
+header>.slider>.slider-bullet-active{
+  background-color: #69BC80;
+}
+/* ------------------- 메인 */
+main{
+  display: grid;
+  grid-template-rows: 1fr 2fr 2fr;
+}
+
+main>.question-txt{
+  display: flex;
+  justify-content: center;
+  padding-top: 6vh ;
+  text-align: center;
+  font-size: 8vi;
+}
+
+main>.question-idx{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.idx{
+  font-size: 8vi;
+}
+
+main>.change-btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main>.change-btn>button{
+  width: 45vw;
+  height: 8vh;
+
+  border-color: white;
+  border-radius: 50px;  
+  border: none;
+
+  font-size: 18px;
+  color: white;
+  background-color: #69BC80;
+
+  box-shadow: 3px 3px 10px rgba(0,0,0,0.3);
+}
+
+/* ----------------------- 풋터(스킵) */
+footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer>a{
+  text-align: center;
+  text-decoration: none;
+}
